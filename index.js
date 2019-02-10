@@ -7,7 +7,7 @@ const cors = require('cors');
 // Please set these as environmental varaibles at runtime. Without setting HELLO_GREETING, the app will provide a default output.
 
 const API_HOST = process.env.API_HOST || 'localhost';
-const API_PORT = process.env.API_PORT || 80;
+const API_PORT = process.env.API_PORT || 8081;
 const HELLO_GREETING = process.env.API_PORT || 'Failed: this must be set at runtime, and you did not set it.'
 
 // ==================== EXPRESS SERVER SETUP ==================== //
@@ -28,7 +28,7 @@ app.use(cors());
 app.get('/hello', cors(), function(req, res) {
   debug("Hello requested.")
 	res.status(200);
-	res.json({ hello: ${HELLO_GREETING} });
+	res.send(HELLO_GREETING);
 });
 
 app.use('/', function (req, res) {
