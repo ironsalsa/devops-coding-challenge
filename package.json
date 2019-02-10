@@ -1,0 +1,27 @@
+{
+  "name": "devops-coding-challenge",
+  "version": "0.0.1",
+  "description": "The NodeJS app for the coding challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ironsalsa/devops-coding-challenge.git"
+  },
+  "keywords": [
+    "devops"
+  ],
+  "author": "Marcy Nugent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ironsalsa/devops-coding-challenge/issues"
+  },
+  "homepage": "https://github.com/ironsalsa/devops-coding-challenge#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  }
+}
